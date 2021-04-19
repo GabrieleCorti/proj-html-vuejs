@@ -1,0 +1,23 @@
+.card_wrap {
+    width: $container;
+    margin: auto;
+    display: flex;
+    padding: 80px 0 50px;
+    justify-content: space-between;
+    &__card {
+        text-align: center;
+        padding: 30px 15px;
+        width: 32%;
+        background-color: white;
+        h3 {
+            text-transform: capitalize;
+            margin: 20px;
+        }
+        .card__wrap_logo {
+            display: inline-block;
+            font-size: $fontAWsize;
+            color: $primaryColor;
+        }
+        
+    }
+}
