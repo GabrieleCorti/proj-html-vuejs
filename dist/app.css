@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 ul {
   list-style: none;
 }
@@ -13,15 +17,26 @@ a {
   text-decoration: none;
 }
 
+button {
+  box-shadow: none;
+  border: none;
+}
+
+/*typo*/
 header {
   height: 700px;
   background-image: url("../images/1-hero-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 20px;
+  text-transform: capitalize;
+  font-size: 14px;
 }
 header a {
   color: white;
+}
+header a.active {
+  color: #ffa837;
 }
 header .nav_wrapper {
   display: flex;
@@ -32,10 +47,40 @@ header .nav_wrapper {
 }
 header .nav_wrapper__main_nav {
   display: flex;
+  align-items: center;
 }
 header .nav_wrapper__main_nav ul {
   display: flex;
+  align-items: baseline;
 }
 header .nav_wrapper__main_nav ul li {
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header .nav_wrapper__main_nav ul li:hover a {
+  color: #ffa837;
+  transition: color 0.13 ease;
+}
+
+.btn_primary {
+  background-color: #ffa837;
+  border-radius: 16px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.special {
+  background-color: transparent;
+  border: 1px solid #ffa837;
+  border-radius: 5px;
+  color: #ffa837;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-left: 8px;
+  font-size: 9px;
 }

@@ -4,8 +4,15 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 20px;
+    text-transform: capitalize;
+    font-size: $fontNavBar;
     a {
         color: white;
+
+        &.active {
+            color: $primaryColor;
+        }
+
     }
     .nav_wrapper {
         display: flex;
@@ -16,10 +23,19 @@ header {
 
         &__main_nav {
             display: flex;
+            align-items: center;
             ul {
                 display: flex;
+                align-items: baseline;
                 li {
                     padding: 0 20px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    &:hover a {
+                        color: $primaryColor;
+                        transition: color .13 ease;
+                    }
                 }
             }
         }

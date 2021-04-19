@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 ul {
     list-style: none;
 }
@@ -12,3 +16,10 @@ ul {
 a {
     text-decoration: none;
 }
+
+button {
+    box-shadow: none;
+    border: none;
+}
+
+/*typo*/
