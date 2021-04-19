@@ -1,0 +1,21 @@
+header {
+    .jumbotron {
+        width: $container;
+        margin: auto;
+        .clame{
+            width: 47%;
+            margin-top: 250px;
+            h1 {
+                color: white;
+                margin-bottom: 12px;
+            }
+            p {
+                color: white;
+                margin: 24px 0;
+            }
+            .btn_secondary {
+                margin-left: 10px;
+            }
+        }
+    }
+}

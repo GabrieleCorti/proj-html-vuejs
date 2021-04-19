@@ -23,3 +23,13 @@ button {
 }
 
 /*typo*/
+h1 {
+    font-size: $fontBig;
+}
+
+.jumbotron {
+    p {
+        font-size: $fontMainT;
+        line-height: 1.5;
+    }
+}

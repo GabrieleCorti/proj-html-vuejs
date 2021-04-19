@@ -8,6 +8,15 @@
     padding: 10px;
 }
 
+.btn_secondary {
+    background-color: $secondaryColor;
+}
+
+.big {
+    padding: 13px 22px;
+    border-radius: 22px;
+}
+
 .special {
     background-color: transparent;
     border: 1px solid $primaryColor;
