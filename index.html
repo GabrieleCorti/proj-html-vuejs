@@ -139,6 +139,35 @@
                 </div>
                 <button class="btn_primary big">view our work</button>
             </section>
+            <section class="section-4 blue">
+                <div class="intro color_section">
+                    <h2>See our top notch service</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores fuga vero</p>
+                </div>
+                <div class="card_wrap">
+                    <div class="card_wrap__card price" v-for="(item, index) in plans" :key="index">
+                        <h3>{{item.type}}</h3>
+                        <ul>
+                            <li class="price">
+                                <div class="dollar">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="price">
+                                    {{item.price}}
+                                </div>
+                                <div class="decimal">
+                                    <span class="cent">99</span>
+                                    <span class="month">montly</span>
+                                </div>
+                            </li>
+                            <li><span>{{item.nProject}} Projects</span></li>
+                            <li><span>{{item.storage}} GB Storage</span></li>
+                            <li><span>{{item.users}}</span></li>
+                        </ul>
+                        <button class="btn_gray">start today</button>
+                    </div>
+                </div>
+            </section>
 
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

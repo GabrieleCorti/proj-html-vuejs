@@ -47,6 +47,13 @@ section {
 
 .section-3 {
   text-align: center;
+}
+
+.section-4 {
+  background-image: url("../images/background1.jpg");
+}
+
+.section-3, .section-4, .section-5 {
   padding-bottom: 80px;
 }
 
