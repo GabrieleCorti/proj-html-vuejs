@@ -37,6 +37,14 @@ section {
   background-position: bottom;
 }
 
+.section-2 {
+  padding-bottom: 100px;
+  background-color: #051745;
+  background-image: url("../images/pattern_background.png");
+  background-position-x: -10%;
+  background-size: cover;
+}
+
 .gray {
   background-color: #f8f8f8;
 }
@@ -154,12 +162,15 @@ header .jumbotron .clame .btn_secondary {
   margin-left: 10px;
 }
 
-.section-1 .intro {
+.intro {
   width: 40%;
   margin: auto;
   text-align: center;
 }
-.section-1 .intro h2 {
+.intro.color_section {
+  color: white;
+}
+.intro h2 {
   text-transform: capitalize;
   margin-bottom: 15px;
 }
@@ -185,4 +196,25 @@ header .jumbotron .clame .btn_secondary {
   display: inline-block;
   font-size: 30px;
   color: #ffa837;
+}
+
+.card_wrap__card.color_section {
+  width: 23%;
+  background-color: #1a236c;
+  color: white;
+  padding: 30px 35px;
+}
+.card_wrap__card.color_section p {
+  margin-bottom: 15px;
+}
+.card_wrap__card.color_section a {
+  color: #ffa837;
+}
+.card_wrap__card.color_section a:hover {
+  text-decoration: underline;
+}
+.card_wrap__card.color_section a .fas.fa-chevron-right {
+  font-size: 12px;
+  position: relative;
+  bottom: 1px;
 }
