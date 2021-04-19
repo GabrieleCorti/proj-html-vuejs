@@ -133,10 +133,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores fuga vero</p>
                 </div>
                 <div class="img_showcase">
-                    <div class="work_wrap">
-                        <img src="" alt="">
+                    <div class="work_wrap" v-for="(item, index) in imgNumbers" :key="index">
+                        <img :src="'images/case-study-gallery-'+item.imgNumber+'-800x600.jpg'" :alt="item.description">
                     </div>
                 </div>
+                <button class="btn_primary big">view our work</button>
             </section>
 
         </div>

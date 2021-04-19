@@ -1,3 +1,15 @@
 .img_showcase {
     width: $container;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    .work_wrap {
+        width: calc(33% - 10px);
+        padding: 5px 0 5px;
+        img {
+            width: 100%;
+        }
+    }
 }
