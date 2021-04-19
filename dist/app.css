@@ -1,3 +1,41 @@
-body {
-  background-color: red;
+/*all*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 700px;
+  background-image: url("../images/1-hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+header a {
+  color: white;
+}
+header .nav_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 1200px;
+}
+header .nav_wrapper__main_nav {
+  display: flex;
+}
+header .nav_wrapper__main_nav ul {
+  display: flex;
+}
+header .nav_wrapper__main_nav ul li {
+  padding: 0 20px;
 }
