@@ -1,0 +1,27 @@
+footer {
+    div {
+        width: $containerFooter;
+        margin: auto;
+        text-align: center;
+        .logo {
+            display: inline-block;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px 0;
+            li {
+                a {
+                    color: $paragraphColor;
+                    text-transform: capitalize;
+                }
+                padding: 15px;
+            }
+        }
+        };
+    }
+}

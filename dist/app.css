@@ -63,6 +63,10 @@ section {
   background-repeat: no-repeat;
 }
 
+footer {
+  padding: 60px 0 35px;
+}
+
 .gray {
   background-color: #f8f8f8;
 }
@@ -417,4 +421,58 @@ header .jumbotron .clame .btn_secondary {
 }
 .section-7 .container_overlay .intro p {
   margin: 25px 0;
+}
+
+footer div {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+footer div .logo {
+  display: inline-block;
+}
+footer div nav {
+  display: flex;
+  align-items: center;
+}
+footer div nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+footer div nav ul li {
+  padding: 15px;
+}
+footer div nav ul li a {
+  color: #5d5d5d;
+  text-transform: capitalize;
+}
+
+.footer_bot .credits, .footer_bot .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5d5d5d;
+}
+.footer_bot .credits span {
+  color: black;
+}
+.footer_bot .credits li {
+  padding: 0 10px;
+}
+.footer_bot .credits li:not(:first-child) {
+  border-left: 1px solid #5d5d5d;
+}
+.footer_bot .social {
+  padding-top: 20px;
+}
+.footer_bot .social li {
+  padding: 10px;
+}
+.footer_bot .social li i {
+  font-size: 20px;
+}
+.footer_bot .social a {
+  color: #5d5d5d;
 }

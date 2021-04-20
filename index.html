@@ -24,12 +24,12 @@
                    </div>                     
                    <nav class="nav_wrapper__main_nav">
                         <ul>
-                            <li><a href="#" class="active">home</a></li>
+                            <!-- <li><a href="#" class="active">home</a></li>
                             <li><a href="#">who we are</a></li>
                             <li><a href="#">what we do</a></li>
-                            <li><a href="#">where we work</a></li>
-                            <li><a href="#">Careers</a> <button class="special">apply</button></li>
-                            <li><a href="#">news</a></li>
+                            <li><a href="#">where we work</a></li> -->
+                            <li v-for="(item, index) in navVoices" :key="index"><a :href="item.link">{{item.voice}}</a> <button v-if="item.special" class="special">apply</button></li>
+                            <!-- <li><a href="#">news</a></li> -->
                         </ul>
                         <button class="btn_primary">get in touch now</button>
                    </nav>
@@ -246,8 +246,34 @@
                 </div>
             </section>
             <footer class="gray">
-                <div class="logo">
-                    <img src="images/logo_seo_1x.png" alt="">
+                <div class="footer_top">
+                    <div class="logo">
+                        <img src="images/logo_seo_1x.png" alt="">
+                    </div>
+                    <nav class="nav_wrapper__main_nav">
+                        <ul>
+                            <li v-for="(item, index) in navVoices" :key="index">
+                                <a :href="item.link">{{item.voice}}</a>
+                            </li>
+                        </ul>
+                        <button class="btn_primary">get in touch now</button>
+                    </nav>
+                </div>
+                <div class="footer_bot">
+                    <ul class="credits">
+                        <li>
+                            <span><i class="far fa-copyright"></i></span> copyrigth 2012-2020
+                        </li>
+                        <li>avada theme by <span class="important">theme fusion</span></li>
+                        <li>all right reserved</li>
+                        <li>powered by <span class="important">Word Press</span></li>
+                    </ul>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
                 </div>
             </footer>
         </div>

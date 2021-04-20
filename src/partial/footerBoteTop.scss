@@ -1,0 +1,33 @@
+.footer_bot {
+    .credits, .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $paragraphColor;
+    }
+
+    .credits {
+        span {
+            color: black;
+        }
+        li {
+            padding: 0 10px;
+            &:not(:first-child) {
+                border-left: 1px solid $paragraphColor;
+            }
+        }
+    }
+
+    .social {
+        padding-top: 20px;
+        li {
+            padding: 10px;
+            i {
+                font-size: 20px;
+            }
+        }
+        a {
+            color: $paragraphColor;
+        }
+    }
+}
