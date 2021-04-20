@@ -58,6 +58,24 @@ const App = new Vue({
                 storage: "Unlimited",
                 users: "Unlimited Users"
             }
+        ],
+        partners: [
+            {
+                number: "5",
+                description: "nome del partner"
+            },
+            {
+                number: "6",
+                description: "nome del partner"
+            },
+            {
+                number: "1",
+                description: "nome del partner"
+            },
+            {
+                number: "2",
+                description: "nome del partner"
+            }
         ]
     },
     methods: {

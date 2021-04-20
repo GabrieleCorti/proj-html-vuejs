@@ -227,6 +227,18 @@
                         <div class="circle"></div>
                     </div>
                     <hr>
+                    <div class="partner_logo">
+                        <!-- loghi generati visto i nomi delle immagini -->
+                        <div class="parter_logo__wrap" v-for="(item, index) in partners" :key="index">
+                            <img :src="'images/clients_partner_'+item.number+'-200x202.png'" alt="item.description">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-7">
+                <div class="intro color_section">
+                    <h2>start your free consultation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae fuga deleniti velit vel magnam rerum quo nobis nemo aliquid. Corporis minima facilis vero velit</p>
                 </div>
             </section>
 

@@ -57,6 +57,10 @@ section {
   padding-bottom: 80px;
 }
 
+.section-7 {
+  background-image: url("../images/CTA-seo-1.jpg");
+}
+
 .gray {
   background-color: #f8f8f8;
 }
@@ -382,4 +386,18 @@ header .jumbotron .clame .btn_secondary {
 }
 .container .bullet .circle.active {
   background-color: black;
+}
+.container hr {
+  opacity: 0.3;
+}
+.container .partner_logo {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+.container .partner_logo .parter_logo__wrap {
+  width: 8%;
+}
+.container .partner_logo .parter_logo__wrap img {
+  width: 100%;
 }

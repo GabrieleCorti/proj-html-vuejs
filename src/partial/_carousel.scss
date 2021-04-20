@@ -45,4 +45,20 @@
             }  
         }
     }
+
+    hr {
+        opacity: 0.3;
+    }
+
+    .partner_logo {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+        .parter_logo__wrap {
+            width: 8%;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
