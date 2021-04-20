@@ -317,3 +317,22 @@ header .jumbotron .clame .btn_secondary {
   font-weight: 900;
   color: #818e9d;
 }
+
+.news_card {
+  text-align: center;
+  width: calc(33% - 10px);
+}
+.news_card h3 {
+  color: #ffa837;
+  text-transform: capitalize;
+}
+.news_card p {
+  margin-bottom: 15px;
+}
+.news_card .img_wrap {
+  width: 100%;
+  display: inline-block;
+}
+.news_card .img_wrap img {
+  width: 100%;
+}

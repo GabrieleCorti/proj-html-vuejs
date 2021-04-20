@@ -1,0 +1,18 @@
+.news_card {
+    text-align: center;
+    width: calc(33% - 10px);
+    h3 {
+        color: $primaryColor;
+        text-transform: capitalize;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    .img_wrap {
+        width: 100%;
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+    }
+}
