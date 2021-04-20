@@ -1,0 +1,39 @@
+.card_wrap__card.price {
+    width: 24%;
+    li {
+        margin: 35px 0;
+
+        &.price {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            .price__number {
+                .dollar {
+                    display: inline-block;
+                    .fas.fa-dollar-sign {
+                        font-size: 18px;
+                        vertical-align: super;
+                        position: relative;
+                        left: 9px;
+                    }
+                }
+                font-size: 40px;
+            } 
+            .decimal {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                .cent {
+                    font-size: 14px;
+                    position: relative;
+                    right: 8px;
+                    bottom: 4px;
+                }
+                .month {
+                    font-size: 11px;
+                }
+            }
+        } 
+    }
+    
+}

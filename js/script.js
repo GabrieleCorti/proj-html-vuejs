@@ -32,28 +32,28 @@ const App = new Vue({
                 type: "Standard",
                 price: 19,
                 nProject: 5,
-                storage: 5,
+                storage: "5 GB",
                 users: "Unlimited Users"
             },
             {   
                 type: "Premium",
-                price: 19,
-                nProject: 5,
-                storage: 5,
+                price: 29,
+                nProject: 10,
+                storage: "15 GB",
                 users: "Unlimited Users"
             },
             {
                 type: "Professional",
-                price: 19,
-                nProject: 5,
-                storage: 5,
+                price: 39,
+                nProject: 15,
+                storage: "30 GB",
                 users: "Unlimited Users"
             },
             {
                 type: "Extreme",
-                price: 19,
-                nProject: 5,
-                storage: 5,
+                price: 59,
+                nProject: "Unlimited",
+                storage: "Unlimited",
                 users: "Unlimited Users"
             }
         ]

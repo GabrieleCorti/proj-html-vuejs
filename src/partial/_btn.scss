@@ -27,3 +27,18 @@
     margin-left: 8px;
     font-size: 9px;
 }
+
+.btn_gray {
+    background-color: transparent;
+    border: 2px solid $paragraphColor;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 900;
+    color: $paragraphColor;
+    &:hover {
+        background-color: $primaryColor;
+        color: white;
+        border-color: $primaryColor;
+        transition: all .13s ease; 
+    }
+}

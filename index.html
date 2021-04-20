@@ -149,11 +149,14 @@
                         <h3>{{item.type}}</h3>
                         <ul>
                             <li class="price">
-                                <div class="dollar">
+                                <!-- <div class="dollar">
                                     <i class="fas fa-dollar-sign"></i>
-                                </div>
-                                <div class="price">
-                                    {{item.price}}
+                                </div> -->
+                                <div class="price__number">
+                                    <div class="dollar">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <span>{{item.price}}</span>
                                 </div>
                                 <div class="decimal">
                                     <span class="cent">99</span>
@@ -161,10 +164,10 @@
                                 </div>
                             </li>
                             <li><span>{{item.nProject}} Projects</span></li>
-                            <li><span>{{item.storage}} GB Storage</span></li>
+                            <li><span>{{item.storage}} Storage</span></li>
                             <li><span>{{item.users}}</span></li>
                         </ul>
-                        <button class="btn_gray">start today</button>
+                        <button class="btn_primary btn_gray">start today</button>
                     </div>
                 </div>
             </section>

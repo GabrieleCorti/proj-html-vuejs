@@ -74,6 +74,10 @@ h3 {
   font-size: 23px;
 }
 
+p {
+  color: #5d5d5d;
+}
+
 .jumbotron p {
   font-size: 21px;
   line-height: 1.5;
@@ -121,7 +125,7 @@ header .nav_wrapper__main_nav ul li {
 }
 header .nav_wrapper__main_nav ul li:hover a {
   color: #ffa837;
-  transition: color 0.13 ease;
+  transition: all 0.13s ease;
 }
 
 .btn_primary {
@@ -154,6 +158,21 @@ header .nav_wrapper__main_nav ul li:hover a {
   font-size: 9px;
 }
 
+.btn_gray {
+  background-color: transparent;
+  border: 2px solid #5d5d5d;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 900;
+  color: #5d5d5d;
+}
+.btn_gray:hover {
+  background-color: #ffa837;
+  color: white;
+  border-color: #ffa837;
+  transition: all 0.13s ease;
+}
+
 header .jumbotron {
   width: 1200px;
   margin: auto;
@@ -180,6 +199,9 @@ header .jumbotron .clame .btn_secondary {
   text-align: center;
 }
 .intro.color_section {
+  color: white;
+}
+.intro.color_section p {
   color: white;
 }
 .intro h2 {
@@ -218,6 +240,7 @@ header .jumbotron .clame .btn_secondary {
 }
 .card_wrap__card.color_section p {
   margin-bottom: 15px;
+  color: white;
 }
 .card_wrap__card.color_section a {
   color: #ffa837;
@@ -245,4 +268,42 @@ header .jumbotron .clame .btn_secondary {
 }
 .img_showcase .work_wrap img {
   width: 100%;
+}
+
+.card_wrap__card.price {
+  width: 24%;
+}
+.card_wrap__card.price li {
+  margin: 35px 0;
+}
+.card_wrap__card.price li.price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card_wrap__card.price li.price .price__number {
+  font-size: 40px;
+}
+.card_wrap__card.price li.price .price__number .dollar {
+  display: inline-block;
+}
+.card_wrap__card.price li.price .price__number .dollar .fas.fa-dollar-sign {
+  font-size: 18px;
+  vertical-align: super;
+  position: relative;
+  left: 9px;
+}
+.card_wrap__card.price li.price .decimal {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.card_wrap__card.price li.price .decimal .cent {
+  font-size: 14px;
+  position: relative;
+  right: 8px;
+  bottom: 4px;
+}
+.card_wrap__card.price li.price .decimal .month {
+  font-size: 11px;
 }

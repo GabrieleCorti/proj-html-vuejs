@@ -34,7 +34,7 @@ header {
                     cursor: pointer;
                     &:hover a {
                         color: $primaryColor;
-                        transition: color .13 ease;
+                        transition: all .13s ease;
                     }
                 }
             }
