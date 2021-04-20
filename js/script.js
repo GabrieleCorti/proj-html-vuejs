@@ -2,6 +2,38 @@ const App = new Vue({
     
     el: "#app",
     data: {
+        navVoices: [
+            {
+                voice: "home",
+                link: "#",
+                special: false
+            }, 
+            {
+                voice: "who we are",
+                link: "#",
+                special: false
+            },
+            {
+                voice: "what we do",
+                link: "#",
+                special: false
+            },
+            {
+                voice: "where we work",
+                link: "#",
+                special: false
+            },
+            {
+                voice: "Careers",
+                link: "#",
+                special: true
+            },
+            {
+                voice: "news",
+                link: "#",
+                special: false
+            },
+        ],
         /* array di oggeti per associare img e description per alt */
         imgNumbers: [
         {
