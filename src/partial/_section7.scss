@@ -1,0 +1,14 @@
+.section-7 {
+    padding: 0px;
+    .container_overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        .intro {
+            padding: 100px 0;
+            p {
+                margin: 25px 0;
+            }
+        }
+    }
+}

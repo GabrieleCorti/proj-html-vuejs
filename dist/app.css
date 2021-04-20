@@ -59,6 +59,8 @@ section {
 
 .section-7 {
   background-image: url("../images/CTA-seo-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .gray {
@@ -400,4 +402,19 @@ header .jumbotron .clame .btn_secondary {
 }
 .container .partner_logo .parter_logo__wrap img {
   width: 100%;
+}
+
+.section-7 {
+  padding: 0px;
+}
+.section-7 .container_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.section-7 .container_overlay .intro {
+  padding: 100px 0;
+}
+.section-7 .container_overlay .intro p {
+  margin: 25px 0;
 }
