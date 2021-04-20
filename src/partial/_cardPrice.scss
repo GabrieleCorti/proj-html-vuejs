@@ -2,6 +2,7 @@
     width: 24%;
     li {
         margin: 35px 0;
+        color: $paragraphColor;
 
         &.price {
             display: flex;
@@ -17,7 +18,11 @@
                         left: 9px;
                     }
                 }
+                span {
+                    color: $secondaryColor;
+                }
                 font-size: 40px;
+                font-weight: 900;
             } 
             .decimal {
                 display: flex;
@@ -28,9 +33,14 @@
                     position: relative;
                     right: 8px;
                     bottom: 4px;
+                    font-weight: 900;
+                    color: $secondaryColor;
                 }
                 .month {
                     font-size: 11px;
+                    font-style: italic;
+                    font-weight: 900;
+                    color: #818e9d;
                 }
             }
         } 

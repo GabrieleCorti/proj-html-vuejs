@@ -275,6 +275,7 @@ header .jumbotron .clame .btn_secondary {
 }
 .card_wrap__card.price li {
   margin: 35px 0;
+  color: #5d5d5d;
 }
 .card_wrap__card.price li.price {
   display: flex;
@@ -283,6 +284,7 @@ header .jumbotron .clame .btn_secondary {
 }
 .card_wrap__card.price li.price .price__number {
   font-size: 40px;
+  font-weight: 900;
 }
 .card_wrap__card.price li.price .price__number .dollar {
   display: inline-block;
@@ -292,6 +294,9 @@ header .jumbotron .clame .btn_secondary {
   vertical-align: super;
   position: relative;
   left: 9px;
+}
+.card_wrap__card.price li.price .price__number span {
+  color: #0369d7;
 }
 .card_wrap__card.price li.price .decimal {
   display: flex;
@@ -303,7 +308,12 @@ header .jumbotron .clame .btn_secondary {
   position: relative;
   right: 8px;
   bottom: 4px;
+  font-weight: 900;
+  color: #0369d7;
 }
 .card_wrap__card.price li.price .decimal .month {
   font-size: 11px;
+  font-style: italic;
+  font-weight: 900;
+  color: #818e9d;
 }
