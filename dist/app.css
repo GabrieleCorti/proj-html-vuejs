@@ -336,3 +336,50 @@ header .jumbotron .clame .btn_secondary {
 .news_card .img_wrap img {
   width: 100%;
 }
+
+.container {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.container .testimonial_img_wrap {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40px 0 15px;
+  width: 9%;
+}
+.container .testimonial_img_wrap img {
+  width: 100%;
+  display: block;
+}
+.container .cit {
+  font-style: italic;
+  width: 55%;
+  margin: auto;
+}
+.container .author {
+  margin: 20px 0;
+}
+.container .author span:first-child {
+  color: black;
+  font-weight: 900;
+}
+.container .author span:last-child {
+  text-transform: uppercase;
+}
+.container .bullet {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.container .bullet .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: 0 4px;
+}
+.container .bullet .circle.active {
+  background-color: black;
+}

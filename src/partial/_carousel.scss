@@ -1,0 +1,48 @@
+.container {
+    width: $container;
+    margin: auto;
+    text-align: center;
+    .testimonial_img_wrap {
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 40px 0 15px;
+        width: 9%;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .cit {
+        font-style: italic;
+        width: 55%;
+        margin: auto;
+    }
+    .author {
+        margin: 20px 0;
+        span:first-child {
+            color: black;
+            font-weight: 900;
+        }
+        span:last-child {
+            text-transform: uppercase;
+        }
+    }
+    
+
+    .bullet {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            border: 1px solid black;
+            margin: 0 4px;
+            &.active {
+             background-color: black;
+            }  
+        }
+    }
+}

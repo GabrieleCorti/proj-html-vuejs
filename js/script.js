@@ -2,6 +2,7 @@ const App = new Vue({
     
     el: "#app",
     data: {
+        /* array di oggeti per associare img e description per alt */
         imgNumbers: [
         {
             imgNumber: "1-1",
@@ -27,6 +28,7 @@ const App = new Vue({
             imgNumber: "6-1",
             description: "qualcosa"
         }],
+        /* piani facilmento modificabili in questo modo */
         plans: [
             {
                 type: "Standard",
