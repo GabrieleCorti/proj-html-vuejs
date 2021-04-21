@@ -145,8 +145,9 @@ header .nav_wrapper__main_nav ul li:hover a {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
+  word-spacing: 2px;
   /* padding: 10px; */
-  padding: 10px 10px 8px 10px;
+  padding: 10px 20px 7px;
 }
 .btn_primary.no_bg {
   background-color: transparent;
@@ -161,7 +162,7 @@ header .nav_wrapper__main_nav ul li:hover a {
 }
 
 .big {
-  padding: 13px 22px;
+  padding: 13px 30px;
   border-radius: 22px;
 }
 
@@ -205,7 +206,7 @@ header .jumbotron .clame h1 {
 }
 header .jumbotron .clame p {
   color: white;
-  margin: 24px 0;
+  margin: 24px 0 calc(29px + 13px);
 }
 header .jumbotron .clame .btn_secondary {
   margin-left: 10px;
@@ -432,10 +433,10 @@ header .jumbotron .clame .btn_secondary {
   background-color: rgba(0, 0, 0, 0.7);
 }
 .section-7 .container_overlay .intro {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .section-7 .container_overlay .intro p {
-  margin: 25px 0;
+  margin: 38px 0;
 }
 
 footer div {
