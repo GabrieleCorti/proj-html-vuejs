@@ -127,12 +127,48 @@ const App = new Vue({
                 description: "nome del partner"
             }
         ],
-        reverse: false
+        slides: [
+            {
+                img: "2",
+                text: "Ability procedees from a fusiom of skils, knowledge, undertanding and imagination, consolidated by experience",
+                testimonialData: {
+                    name: "Luis Desalvo",
+                    corp: "creo tech"
+                }
+            },
+            {
+                img: "1",
+                text: "Ability procedees from a fusiom of skils, knowledge, undertanding and imagination, consolidated by experience",
+                testimonialData: {
+                    name: "Marta Brezovich",
+                    corp: "Candi"
+                }
+            },
+        ],
+        sliderCount: 0,
+        return: false
     },
     methods: {
-        
+        slideToIndex: function(index) {
+             this.sliderCount = index;
+        }
     },
     mounted:  function () {
-            
+
+           setInterval(() => {
+               /* valuta la posizione */
+               if (this.sliderCount == (this.slides.length - 1)) {
+                    this.return = true;
+                } else if (this.sliderCount == 0) {
+                    this.return = false;
+                }
+                /* cambia l'immagine */
+                if (!this.return) {
+                       this.sliderCount++;
+                } else if (this.return) {
+                       this.sliderCount--;
+                }
+           }, 3500); 
+
         }
 })

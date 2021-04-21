@@ -31,7 +31,7 @@
                             <li v-for="(item, index) in navVoices" :key="index"><a :href="item.link">{{item.voice}}</a> <button v-if="item.btn.special" class="special">{{item.btn.message}}</button></li>
                             <!-- <li><a href="#">news</a></li> -->
                         </ul>
-                        <button class="btn_primary">get in touch now</button>
+                        <a class="btn_primary">get in touch now</a>
                    </nav>
                </div>
                <div class="jumbotron">
@@ -39,8 +39,8 @@
                         <h1>SEM campagane made simple with avada</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil officiis, quasi iusto molestias assumenda</p>
                         <div class="jumbotron__btn_wrap">
-                            <button class="btn_primary big">buy avada now</button>
-                            <button class="btn_primary btn_secondary big">contact us</button>
+                            <a class="btn_primary big">buy avada now</a>
+                            <a class="btn_primary btn_secondary big">contact us</a>
                         </div>
                     </div>
                </div>
@@ -137,7 +137,7 @@
                         <img :src="'images/case-study-gallery-'+item.imgNumber+'-800x600.jpg'" :alt="item.description">
                     </div>
                 </div>
-                <button class="btn_primary big">view our work</button>
+                <a class="btn_primary big">view our work</a>
             </section>
             <!-- card offerte generate -->
             <section class="section-4 blue">
@@ -207,9 +207,9 @@
                             voluptates ab, dolore atque quaerat itaque, quo est aperiam impedit distinctio id aut! Veritatis.</p>
                     </div>
                 </div>
-                <button class="btn_primary">go to news</button>
+                <a class="btn_primary">go to news</a>
             </section>
-            <!-- carousell per ora statico -->
+            <!-- carousell -->
             <section class="section-6">
                 <div class="intro">
                     <h2>what our client say</h2>
@@ -217,27 +217,31 @@
                 <div class="container">
                     <div id="slider">
                         <!-- prima slide -->
-                        <div class="slide_testimonial active_s first">
+                        <div class="slide_testimonial first" :class="(index == sliderCount)? 'active_s' : '' "  v-for="(item, index) in slides" :key="index">
                             <div class="testimonial_img_wrap">
-                                <img src="images\testimonials-2.jpg" alt="">
+                                <img :src="'images/testimonials-'+item.img+'.jpg'" alt="">
                             </div>
-                            <p class="cit">Ability procedees from a fusiom of skils, knowledge, undertanding and imagination, consolidated by
-                                experience</p>
-                            <p class="author"><span>Luis Desalvo,</span> <span>creo tech</span></p>
+                            <p class="cit">{{item.text}}</p>
+                            <p class="author"><span>{{item.testimonialData.name}},</span> <span>{{item.testimonialData.corp}}</span></p>
                         </div>
                         <!-- seconda slide -->
-                        <div class="slide_testimonial last">
+                        <!-- <div class="slide_testimonial last">
                             <div class="testimonial_img_wrap">
                                 <img src="images\testimonials-1.jpg" alt="">
                             </div>
                             <p class="cit">Ability procedees from a fusiom of skils, knowledge, undertanding and imagination, consolidated by
                                 experience</p>
                             <p class="author"><span>Luis Desalvo,</span> <span>creo tech</span></p>
-                        </div>
+                        </div> -->
                         <div class="bullet">
-                            <div class="circle active"></div>
-                            <div class="circle"></div>
-                        </div>
+                            <div 
+                            class="circle" 
+                            v-for="(item, index) in slides" 
+                            :key="index" 
+                            :class="(index == sliderCount)? 'active' : '' "
+                            v-on:click="slideToIndex(index)"
+                            ></div>
+                        </div> 
                         
                     </div>
                     <hr>
@@ -255,7 +259,7 @@
                         <h2>start your free consultation</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae fuga deleniti velit vel magnam rerum
                             quo nobis nemo aliquid. Corporis minima facilis vero velit</p>
-                        <button class="btn_primary">contact us now</button>
+                        <a class="btn_primary">contact us now</a>
                     </div>
                 </div>
             </section>
@@ -270,7 +274,7 @@
                                 <a :href="item.link">{{item.voice}}</a>
                             </li>
                         </ul>
-                        <button class="btn_primary">get in touch now</button>
+                        <a class="btn_primary no_bg">get in touch now</a>
                     </nav>
                 </div>
                 <div class="footer_bot">
