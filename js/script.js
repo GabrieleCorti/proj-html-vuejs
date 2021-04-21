@@ -6,32 +6,50 @@ const App = new Vue({
             {
                 voice: "home",
                 link: "#",
-                special: false
+                btn: {
+                    special: false,
+                    message: ""
+                }
             }, 
             {
                 voice: "who we are",
                 link: "#",
-                special: false
+                btn: {
+                    special: false,
+                    message: ""
+                }
             },
             {
                 voice: "what we do",
                 link: "#",
-                special: false
+                btn: {
+                    special: false,
+                    message: ""
+                }
             },
             {
                 voice: "where we work",
                 link: "#",
-                special: false
+                btn: {
+                    special: false,
+                    message: ""
+                }
             },
             {
                 voice: "Careers",
                 link: "#",
-                special: true
+                btn: {
+                    special: true,
+                    message: "apply"
+                }
             },
             {
                 voice: "news",
                 link: "#",
-                special: false
+                btn: {
+                    special: false,
+                    message: ""
+                }
             },
         ],
         /* array di oggeti per associare img e description per alt */
@@ -108,9 +126,13 @@ const App = new Vue({
                 number: "2",
                 description: "nome del partner"
             }
-        ]
+        ],
+        reverse: false
     },
     methods: {
         
-    }
+    },
+    mounted:  function () {
+            
+        }
 })

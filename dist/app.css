@@ -352,6 +352,12 @@ header .jumbotron .clame .btn_secondary {
   margin: auto;
   text-align: center;
 }
+.container .slide_testimonial {
+  display: none;
+}
+.container .slide_testimonial.active_s {
+  display: block;
+}
 .container .testimonial_img_wrap {
   display: inline-block;
   overflow: hidden;
@@ -384,8 +390,8 @@ header .jumbotron .clame .btn_secondary {
   padding-bottom: 40px;
 }
 .container .bullet .circle {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
   border: 1px solid black;
   margin: 0 4px;

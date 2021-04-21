@@ -2,6 +2,12 @@
     width: $container;
     margin: auto;
     text-align: center;
+    .slide_testimonial {
+        display: none;
+        &.active_s {
+            display: block;
+        }
+    }
     .testimonial_img_wrap {
         display: inline-block;
         overflow: hidden;
@@ -35,8 +41,8 @@
         justify-content: center;
         padding-bottom: 40px;
         .circle {
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
             border-radius: 100%;
             border: 1px solid black;
             margin: 0 4px;
