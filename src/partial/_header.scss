@@ -30,7 +30,13 @@ header {
                 width: 50%;
             }
             background: rgb(55,29,90);
-            background: linear-gradient(142deg, rgba(55,29,90,1) 0%, rgba(51,157,69,1) 94%, $primaryColor 100%);
+            background: url("../images/lines-1.png") 50% 50%, url("../images/pattern_background.png"), linear-gradient(142deg, rgba(55,29,90,1) 0%, rgba(51,157,69,1) 94%, $primaryColor 100%);
+            background-repeat: 
+                no-repeat,
+                no-repeat;
+            background-size: 
+                cover,
+                cover;
         }
         &.slide_1 {
             img {
