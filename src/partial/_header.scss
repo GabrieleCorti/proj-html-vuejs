@@ -30,13 +30,13 @@ header {
                 width: 50%;
             }
             background: rgb(55,29,90);
-            background: url("../images/lines-1.png") 50% 50%, url("../images/pattern_background.png"), linear-gradient(142deg, rgba(55,29,90,1) 0%, rgba(51,157,69,1) 94%, $primaryColor 100%);
+            background: url("../images/lines-1.png") 130% 15%, url("../images/pattern_background.png") 0% 0%/contain, linear-gradient(142deg, rgba(55,29,90,1) 0%, rgba(51,157,69,1) 94%, $primaryColor 100%);
             background-repeat: 
                 no-repeat,
                 no-repeat;
-            background-size: 
-                cover,
-                cover;
+            /* background-size: 
+                initial,
+                contain; */
         }
         &.slide_1 {
             img {
@@ -45,7 +45,10 @@ header {
                 right: -16%;
             }
             background: rgb(19,15,125);
-            background: linear-gradient(142deg, rgba(19,15,125,1) 0%, rgba(88,13,153,1) 59%, rgba(155,55,241,1) 100%);
+            background: url("../images/lines-1.png") 130% 15%, url("../images/pattern_background.png") 0% 0%/contain, linear-gradient(142deg, rgba(19,15,125,1) 0%, rgba(88,13,153,1) 59%, rgba(155,55,241,1) 100%);
+            background-repeat: 
+                no-repeat,
+                no-repeat;
         }
     }
     a {

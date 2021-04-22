@@ -134,16 +134,19 @@ header .slide_head .container img {
 }
 header .slide_head.slide_0 {
   background: #371d5a;
-  background: url("../images/lines-1.png") 50% 50%, url("../images/pattern_background.png"), linear-gradient(142deg, #371d5a 0%, #339d45 94%, #41C457 100%);
+  background: url("../images/lines-1.png") 130% 15%, url("../images/pattern_background.png") 0% 0%/contain, linear-gradient(142deg, #371d5a 0%, #339d45 94%, #41C457 100%);
   background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
+  /* background-size: 
+      initial,
+      contain; */
 }
 header .slide_head.slide_0 img {
   width: 50%;
 }
 header .slide_head.slide_1 {
   background: #130f7d;
-  background: linear-gradient(142deg, #130f7d 0%, #580d99 59%, #9b37f1 100%);
+  background: url("../images/lines-1.png") 130% 15%, url("../images/pattern_background.png") 0% 0%/contain, linear-gradient(142deg, #130f7d 0%, #580d99 59%, #9b37f1 100%);
+  background-repeat: no-repeat, no-repeat;
 }
 header .slide_head.slide_1 img {
   width: 41%;

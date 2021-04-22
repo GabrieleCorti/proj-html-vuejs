@@ -174,7 +174,16 @@ const App = new Vue({
                 } else if (this.return) {
                        this.sliderCount--;
                 }
-           }, 3500); 
+           }, 3500);
+           
+            setInterval(() => {
+                /* cambia l'header */
+                if (this.HeadSlideCount == (this.imgs.length - 1)) {
+                    this.HeadSlideCount = 0;
+                } else {
+                    this.HeadSlideCount++;
+                }
+            }, 3500);
 
         }
 })
