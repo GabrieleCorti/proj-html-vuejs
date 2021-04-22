@@ -1,0 +1,6 @@
+.opacity-enter-active, .opacity-leave-active {
+  transition: all 1s;
+}
+.opacity-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

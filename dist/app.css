@@ -104,6 +104,14 @@ p {
   font-size: 18px;
 }
 
+.opacity-enter-active, .opacity-leave-active {
+  transition: all 1s;
+}
+
+.opacity-enter, .list-leave-to {
+  opacity: 0;
+}
+
 header {
   height: 700px;
   position: relative;
