@@ -46,7 +46,8 @@ section {
   background-color: #051745;
   background-image: url("../images/pattern_background.png");
   background-position-x: -10%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .section-3, .section-5 {
