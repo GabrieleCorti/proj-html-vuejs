@@ -121,7 +121,8 @@ header .slide_head {
   left: 0;
   right: 0;
   z-index: -1;
-  background-color: #41C457;
+  background: #371d5a;
+  background: linear-gradient(142deg, #371d5a 0%, #339d45 94%, #41C457 100%);
 }
 header a {
   color: white;

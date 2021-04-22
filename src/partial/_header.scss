@@ -15,7 +15,8 @@ header {
         left: 0;
         right: 0;
         z-index: -1;
-        background-color: $primaryColor;
+        background: rgb(55,29,90);
+background: linear-gradient(142deg, rgba(55,29,90,1) 0%, rgba(51,157,69,1) 94%, $primaryColor 100%);
     }
     a {
         color: white;
