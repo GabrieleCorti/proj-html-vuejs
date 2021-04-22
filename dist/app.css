@@ -121,8 +121,32 @@ header .slide_head {
   left: 0;
   right: 0;
   z-index: -1;
+}
+header .slide_head .container {
+  height: 100%;
+  position: relative;
+}
+header .slide_head .container img {
+  position: absolute;
+  top: 50%;
+  right: -25%;
+  transform: translate(-50%, -50%);
+}
+header .slide_head.slide_0 {
   background: #371d5a;
   background: linear-gradient(142deg, #371d5a 0%, #339d45 94%, #41C457 100%);
+}
+header .slide_head.slide_0 img {
+  width: 50%;
+}
+header .slide_head.slide_1 {
+  background: #130f7d;
+  background: linear-gradient(142deg, #130f7d 0%, #580d99 59%, #9b37f1 100%);
+}
+header .slide_head.slide_1 img {
+  width: 41%;
+  top: 52%;
+  right: -16%;
 }
 header a {
   color: white;

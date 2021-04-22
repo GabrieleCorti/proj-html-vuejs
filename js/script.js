@@ -2,6 +2,7 @@ const App = new Vue({
     
     el: "#app",
     data: {
+        /* navbar */
         navVoices: [
             {
                 voice: "home",
@@ -109,6 +110,7 @@ const App = new Vue({
                 users: "Unlimited Users"
             }
         ],
+        /* loghi partner */
         partners: [
             {
                 number: "5",
@@ -127,6 +129,7 @@ const App = new Vue({
                 description: "nome del partner"
             }
         ],
+        /* slider testimonial */
         slides: [
             {
                 img: "2",
@@ -146,7 +149,10 @@ const App = new Vue({
             },
         ],
         sliderCount: 0,
-        return: false
+        return: false,
+        /* slider header */
+        imgs: ["best-sem-seo-services-slide-2.png", "best-seo-services-slide-1.png"],
+        HeadSlideCount: 0
     },
     methods: {
         slideToIndex: function(index) {

@@ -19,11 +19,11 @@
             <!-- header che contiene il jumbotron e la navbar -->
             <div class="goTop"><a href="#"><i class="fas fa-chevron-up"></i></a></div>
             <header>
-                <div class="slide_head">
+                <div class="slide_head" :class="'slide_'+index" v-for="(item, index) in imgs" :key="index" v-show="index==HeadSlideCount">
                     <div class="container">
-                        <div class="img_head _wrapper">
-                            <img src="images\best-sem-seo-services-slide-2.png" alt="">
-                        </div>
+                        <!-- <div class="img_head_wrapper"> -->
+                            <img :src="'images/'+item" alt="">
+                        <!-- </div> -->
                     </div>
                 </div>
                <div class="nav_wrapper">

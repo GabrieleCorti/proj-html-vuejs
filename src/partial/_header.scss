@@ -15,8 +15,32 @@ header {
         left: 0;
         right: 0;
         z-index: -1;
-        background: rgb(55,29,90);
-background: linear-gradient(142deg, rgba(55,29,90,1) 0%, rgba(51,157,69,1) 94%, $primaryColor 100%);
+        .container {
+            height: 100%;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                right: -25%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &.slide_0 {
+            img {
+                width: 50%;
+            }
+            background: rgb(55,29,90);
+            background: linear-gradient(142deg, rgba(55,29,90,1) 0%, rgba(51,157,69,1) 94%, $primaryColor 100%);
+        }
+        &.slide_1 {
+            img {
+                width: 41%;
+                top: 52%;
+                right: -16%;
+            }
+            background: rgb(19,15,125);
+            background: linear-gradient(142deg, rgba(19,15,125,1) 0%, rgba(88,13,153,1) 59%, rgba(155,55,241,1) 100%);
+        }
     }
     a {
         color: white;
