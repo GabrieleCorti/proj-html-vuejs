@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-smooth: always;
@@ -50,6 +54,8 @@ section {
 
 .section-4 {
     background-image: url("../images/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-3, .section-4, .section-5 {

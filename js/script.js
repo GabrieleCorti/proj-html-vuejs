@@ -140,7 +140,7 @@ const App = new Vue({
                 img: "1",
                 text: "Ability procedees from a fusiom of skils, knowledge, undertanding and imagination, consolidated by experience",
                 testimonialData: {
-                    name: "Marta Brezovich",
+                    name: "Shelia McCourtney",
                     corp: "Candi"
                 }
             },

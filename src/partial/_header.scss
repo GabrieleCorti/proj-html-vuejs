@@ -1,11 +1,22 @@
 header {
     height: 700px;
-    background-image: url("../images/1-hero-image.png");
+    position: relative;
+   /*  background-image: url("../images/1-hero-image.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     padding-top: 20px;
     text-transform: capitalize;
     font-size: $fontNavBar;
+    .slide_head {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-color: $primaryColor;
+    }
     a {
         color: white;
 
@@ -41,3 +52,4 @@ header {
         }
     }
 }
+

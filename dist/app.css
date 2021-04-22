@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-smooth: always;
@@ -51,6 +55,8 @@ section {
 
 .section-4 {
   background-image: url("../images/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-3, .section-4, .section-5 {
@@ -99,18 +105,29 @@ p {
 
 header {
   height: 700px;
-  background-image: url("../images/1-hero-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  /*  background-image: url("../images/1-hero-image.png");
+   background-repeat: no-repeat;
+   background-size: cover; */
   padding-top: 20px;
   text-transform: capitalize;
   font-size: 14px;
+}
+header .slide_head {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #41C457;
 }
 header a {
   color: white;
 }
 header a.active {
-  color: #ffa837;
+  color: #41C457;
 }
 header .nav_wrapper {
   display: flex;
@@ -134,12 +151,12 @@ header .nav_wrapper__main_nav ul li {
   cursor: pointer;
 }
 header .nav_wrapper__main_nav ul li:hover a {
-  color: #ffa837;
+  color: #41C457;
   transition: all 0.13s ease;
 }
 
 .btn_primary {
-  background-color: #ffa837;
+  background-color: #41C457;
   border-radius: 16px;
   color: white;
   font-weight: bold;
@@ -168,9 +185,9 @@ header .nav_wrapper__main_nav ul li:hover a {
 
 .special {
   background-color: transparent;
-  border: 1px solid #ffa837;
+  border: 1px solid #41C457;
   border-radius: 5px;
-  color: #ffa837;
+  color: #41C457;
   text-transform: uppercase;
   padding: 5px;
   margin-left: 8px;
@@ -186,9 +203,9 @@ header .nav_wrapper__main_nav ul li:hover a {
   color: #5d5d5d;
 }
 .btn_gray:hover {
-  background-color: #ffa837;
+  background-color: #41C457;
   color: white;
-  border-color: #ffa837;
+  border-color: #41C457;
   transition: all 0.13s ease;
 }
 
@@ -248,7 +265,7 @@ header .jumbotron .clame .btn_secondary {
 .card_wrap__card .card__wrap_logo {
   display: inline-block;
   font-size: 30px;
-  color: #ffa837;
+  color: #41C457;
 }
 
 .card_wrap__card.color_section {
@@ -262,7 +279,7 @@ header .jumbotron .clame .btn_secondary {
   color: white;
 }
 .card_wrap__card.color_section a {
-  color: #ffa837;
+  color: #41C457;
 }
 .card_wrap__card.color_section a:hover {
   text-decoration: underline;
@@ -342,7 +359,7 @@ header .jumbotron .clame .btn_secondary {
   width: calc(33% - 10px);
 }
 .news_card h3 {
-  color: #ffa837;
+  color: #41C457;
   text-transform: capitalize;
 }
 .news_card p {
@@ -491,4 +508,24 @@ footer div nav ul li a {
 }
 .footer_bot .social a {
   color: #5d5d5d;
+}
+
+.goTop {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 100px;
+}
+.goTop a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
 }
